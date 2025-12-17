@@ -56,7 +56,7 @@ public class UserServiceImpl implements UserService {
         User user = userRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("User not found: " + id));
 
-        // (valfritt men bra) hindra att man byter till någon annans email
+
         if (!user.getEmail().equals(request.getEmail())
                 && userRepository.existsByEmail(request.getEmail())) {
             throw new RuntimeException("Email already exists: " + request.getEmail());
