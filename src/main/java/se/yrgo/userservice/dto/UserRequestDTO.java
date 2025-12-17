@@ -13,3 +13,4 @@ public class UserRequestDTO {
     @Email
     private String email;
 }
+

@@ -6,7 +6,7 @@ import lombok.*;
 @Entity
 @Getter @Setter
 @NoArgsConstructor @AllArgsConstructor
-@Table(name = "users") // "user" kan vara reserverat i vissa DB:er
+@Table(name = "users")
 public class User {
 
     @Id
@@ -19,3 +19,4 @@ public class User {
     @Column(nullable = false, unique = true)
     private String email;
 }
+
