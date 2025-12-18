@@ -59,7 +59,7 @@ public class UserController {
 
     @GetMapping("/health")
     public ResponseEntity<String> health() {
-        return ResponseEntity.ok("✅ User Service is UP and running on port 8081!");
+        return ResponseEntity.ok("User Service is UP and running on port 8081!");
     }
 }
 

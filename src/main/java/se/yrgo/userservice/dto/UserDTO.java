@@ -19,7 +19,7 @@ public class UserDTO {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    // Preferences (simplified - just show if they exist)
+    // Preferences (simplified  just show if they exist)
     private String preferredLanguage;
     private String notificationPreference;
     private Boolean marketingEmails;
